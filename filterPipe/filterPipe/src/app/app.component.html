@@ -1,0 +1,18 @@
+<p>Filter pipe using search box</p>
+
+<input [(ngModel)]="searchText" placeholder="search text goes here">
+<ul>
+  <li *ngFor="let data of forecasts | filter : searchText">
+    {{data.title}}  {{data.id}}
+  </li>
+</ul>
+
+<div>
+  <label>Summary: </label>
+  <select (change)="filterForeCasts($event.target.value)">
+      <option value="0">--All--</option>
+      <option value="1">2018</option>
+      <option value="2">2019</option>
+
+  </select>
+</div>

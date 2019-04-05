@@ -1,0 +1,33 @@
+<h3>Grow Shrink animation</h3>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<p [@myAwesomeAnimation]='state' (click)="animateMe()">I will grow and shrink</p>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h3>Enter and Leave animation</h3>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm" style="display: inline;">
+      <button (click)="toggleDiv()">Toggle the div</button>
+      <div *ngIf="showDiv" [@flyInOut]>
+        The box is inserted
+      </div>
+    </div>
+    <div class="col-sm" style="display: inline;">
+      <button (click)="toggleDiv()">Toggle the div</button>
+      <div *ngIf="showDiv1" [@flyInOut_1]>
+        The box is inserted
+      </div>
+    </div>
+  </div>
+</div>

@@ -10,5 +10,5 @@ Pagination
 
 Infinite scrolling 
 
-Animations 
+Angular Animations 
 
